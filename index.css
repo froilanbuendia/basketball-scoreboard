@@ -1,8 +1,92 @@
 body {
-    margin: 0;
+  margin: 0;
+  background-color: #1b244a;
+  color: #fefefe;
+  font-family: "Verdana", sans-serif;
+}
+.timer-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  font-size: 90px;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 10px 20px;
+  color: red;
 }
 
-.container {
-    display: flex;
-    justify-content: space-around;
+.scoreboard-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreboard-team-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.scoreboard-team {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.scoreboard-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreboard-item-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 120px;
+  background: #000;
+  color: red;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+
+.scoreboard-button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 155px;
+  color: #9aabd8;
+}
+
+.scoreboard-item-button,
+.timer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+}
+
+.highlight {
+  color: gold;
+}
+
+.timer-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timer-btn {
+  display: flex;
+  width: 100px;
 }

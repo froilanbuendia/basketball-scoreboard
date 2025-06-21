@@ -1,16 +1,55 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scoreboard-container">
+        <div class="timer-container">
+            <div class="timer" id="timer"></div>
+        </div>
+        <div class="scoreboard-team-container">
+            <div class="scoreboard-item">
+                <h3 class="scoreboard-team">HOME</h3>
+                <div class="scoreboard-item-score" id="home-score">0</div>
+                <div class="scoreboard-button-container">
+                <div class="scoreboard-item-button" onclick="addScore(1, 'home')">
+                    +1
+                </div>
+                <div class="scoreboard-item-button" onclick="addScore(2, 'home')">
+                    +2
+                </div>
+                <div class="scoreboard-item-button" onclick="addScore(3, 'home')">
+                    +3
+                </div>
+                </div>
             </div>
-            <div>
-                <h3>GUEST</h3>
+            <div class="scoreboard-item">
+                <h3 class="scoreboard-team">GUEST</h3>
+                <div class="scoreboard-item-score" id="guest-score">0</div>
+                <div class="scoreboard-button-container">
+                <div class="scoreboard-item-button" onclick="addScore(1, 'guest')">
+                    +1
+                </div>
+                <div class="scoreboard-item-button" onclick="addScore(2, 'guest')">
+                    +2
+                </div>
+                <div class="scoreboard-item-button" onclick="addScore(3, 'guest')">
+                    +3
+                </div>
+                </div>
             </div>
         </div>
-        <script src="index.js"></script>
-    </body>
+    </div>
+    <div class="timer-btn-container">
+        <button class="timer-btn" onclick="startCountdown()">Start</button>
+        <button class="timer-btn"  onclick="stopCountdown()">Stop</button>
+        <button class="timer-btn"  onclick="resetCountdown()">Reset</button>
+        </div>
+      </div>
+    <script src="index.js"></script>
+  </body>
 </html>
